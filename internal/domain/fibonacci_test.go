@@ -6,6 +6,7 @@ import (
 
 func TestCalculateFibonacci(t *testing.T) {
 	tests := []struct {
+		// case名つけるか...
 		n        int
 		expected string
 		err      bool

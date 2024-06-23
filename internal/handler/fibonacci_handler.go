@@ -35,5 +35,3 @@ func (h *FibonacciHandler) GetFibonacci(c echo.Context) error {
 
 	return c.JSON(http.StatusOK, map[string]*big.Int{"result": result})
 }
-
-// TODO: 負の値ととても大きなnだとエラーになるはず

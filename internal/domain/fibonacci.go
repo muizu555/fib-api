@@ -5,7 +5,6 @@ import (
 	"math/big"
 )
 
-// CalculateFibonacci returns the n-th Fibonacci number using big.Int to handle large numbers
 func CalculateFibonacci(n int) (*big.Int, error) {
 	if n < 1 {
 		return nil, errors.New("input must be a positive integer")
@@ -14,11 +13,13 @@ func CalculateFibonacci(n int) (*big.Int, error) {
 		return big.NewInt(1), nil
 	}
 
-	a := big.NewInt(1)
-	b := big.NewInt(1)
+	first := big.NewInt(1)
+	second := big.NewInt(1)
+	var result *big.Int
+
 	for i := 3; i <= n; i++ {
-		a.Add(a, b)
-		a, b = b, a
+		result = new(big.Int).Add(first, second)
+		first, second = second, result
 	}
-	return b, nil
+	return result, nil
 }

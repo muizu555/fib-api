@@ -7,6 +7,24 @@ The Fibonacci API is designed to return the nth Fibonacci number. The Fibonacci 
 <img width="297" alt="image" src="https://github.com/muizu555/fib-api/assets/109199972/cb0acfe8-0f3d-4205-96ff-c693d9e3d1e8">
 
 
+## Architecture
+### cmd層
+main.go
+アプリケーションのエントリーポイント。
+### Domain層
+ここにはフィボナッチ数を計算するロジック (fibonacci.go) とそのユニットテスト (fibonacci_test.go) が含まれます。
+この層は他の層に依存しません。
+### Usecase層
+fibonacci_usecase.go
+アプリケーションのユースケースを実装。Domain層に依存しますが、他の層には依存しません。(現状は...)
+仮にデータベースとのやり取りが必要になるとrepository層などを追加し、その層に依存することになります。
+### Handler層
+fibonacci_handler.go
+HTTPリクエストを処理し、Usecase層を呼び出します。
+### Router層
+router.go
+ルーティングの設定を行います。
+
 ## Endpoints
 
 ### Get Fibonacci Number

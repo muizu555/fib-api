@@ -4,24 +4,8 @@
 
 The Fibonacci API is designed to return the nth Fibonacci number. The Fibonacci sequence is a series where the next term is the sum of the previous two terms, starting with 1 and 1. For example, the sequence goes 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89...
 
-## ディレクトリ構成
-fib_api/
-├── cmd/
-│   └── server/
-│       └── main.go
-├── internal/
-│   ├── domain/
-│   │   ├── fibonacci.go
-│   │   ├── fibonacci_test.go
-│   ├── usecase/
-│   │   └── fibonacci_usecase.go
-│   ├── handler/
-│   │   └── fibonacci_handler.go
-│   └── router/
-│       └── router.go
-├── go.mod
-└── go.sum
-└── Readme.md (this file)
+<img width="297" alt="image" src="https://github.com/muizu555/fib-api/assets/109199972/cb0acfe8-0f3d-4205-96ff-c693d9e3d1e8">
+
 
 ## Endpoints
 

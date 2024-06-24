@@ -8,7 +8,6 @@ import (
 
 func SetupRouter(e *echo.Echo) {
 	fibonacciUseCase := usecase.NewFibonacciUseCase()
-	//　依存性注入
 	fibonacciHandler := handler.NewFibonacciHandler(fibonacciUseCase)
 
 	e.GET("/fib", fibonacciHandler.GetFibonacci)

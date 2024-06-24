@@ -6,11 +6,11 @@ import (
 
 func TestCalculateFibonacci(t *testing.T) {
 	tests := []struct {
-		// case名つけるか...
 		n        int
 		expected string
 		err      bool
 	}{
+		// 正常系
 		{1, "1", false},
 		{2, "1", false},
 		{3, "2", false},
@@ -18,6 +18,7 @@ func TestCalculateFibonacci(t *testing.T) {
 		{20, "6765", false},
 		{50, "12586269025", false},
 		{99, "218922995834555169026", false},
+		// 異常系
 		{0, "", true},
 		{-1, "", true},
 	}

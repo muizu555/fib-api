@@ -2,7 +2,7 @@
 
 ## Overview
 
-The Fibonacci API is designed to return the nth Fibonacci number. The Fibonacci sequence is a series where the next term is the sum of the previous two terms, starting with 1 and 1. For example, the sequence goes 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89...
+フィボナッチAPIはn番目のフィボナッチ数を返すように設計されている。フィボナッチ数列は、1、1から始まり、次の項が前の2項の和となる数列である。例えば、数列は1、1、2、3、5、8、13、21、34、55、89...と続く。
 
 <img width="297" alt="image" src="https://github.com/muizu555/fib-api/assets/109199972/cb0acfe8-0f3d-4205-96ff-c693d9e3d1e8">
 
@@ -33,12 +33,11 @@ router.go
 
 **Method:** `GET`
 
-**Description:** Returns the nth Fibonacci number.
+**Description:** n番目のフィボナッチ数を返す
 
 #### Request Parameters
 
-- `n` (required): The position in the Fibonacci sequence. It must be a positive integer.
-
+- `n` (required):  フィボナッチ数列における位置。正の整数でなければならない。
 #### Request Example
 
 ```sh

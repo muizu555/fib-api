@@ -6,6 +6,7 @@ import (
 )
 
 func SetupRouter(e *echo.Echo, fibonacciHandler *handler.FibonacciHandler) {
-
-	e.GET("/fib", fibonacciHandler.GetFibonacci)
+	{
+		e.GET("/fib", fibonacciHandler.GetFibonacci)
+	}
 }

@@ -29,7 +29,7 @@ curl -X GET http://52.68.144.36:8080/fib?n=6
 
 ## GET /fib?n=<number> (ex n=6)
 n番目のフィボナッチ数を取得する
-
+```
 Status Code: 200 OK
 RESPONSE
 ```json

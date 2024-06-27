@@ -41,7 +41,7 @@ router.go
 #### Request Example
 
 ```sh
-curl -X GET http://www.cipher-vault.mydns.jp/fib?n=55/fib?n=6
+curl -X GET http://www.cipher-vault.mydns.jp/fib?n=6
 
 ```
 
